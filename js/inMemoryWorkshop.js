@@ -16,7 +16,7 @@ function getWorkshopByName(name) {
         if (!name) {
             reject(new Error("name parameter is required"))
         }
-        resolve(inMemoryWorkshop.find(workshop => workshop.name === workshop))
+        resolve(inMemoryWorkshop.find(workshop => workshop.name === name))
     })
 }
 
@@ -36,13 +36,13 @@ function addWorkshop(name, description) {
     })
 }
 
-function removeWorkshopByName(name) {
+function removeWorkshopByName(name) { // eslint-disable-line no-unused-vars
     return new Promise((resolve, reject) => {
         reject(new Error("Not implemented"))
     })
 }
 
-function updateWorkshop(name, description) {
+function updateWorkshop(name, description) { // eslint-disable-line no-unused-vars
     return new Promise((resolve, reject) => {
         reject(new Error("Not implemented"))
     })
